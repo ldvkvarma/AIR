@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ;
 
 // Middleware
 app.use(cors());
@@ -37,7 +37,8 @@ transporter.verify((error, success) => {
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
   try {
-    const { name, email, projectType, budget, timeline, message } = req.body;
+    console.log('Received form data:', req.body);
+    const { name, email, 'project-type': projectType, budget, timeline, message } = req.body;
 
     // Basic validation
     if (!name || !email || !message) {
@@ -59,7 +60,8 @@ app.post('/api/contact', async (req, res) => {
     // Construct email
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'airsoftwaresolution@gmail.com',
+      to: process.env.EMAIL_USER,
+      replyTo: email,
       subject: `New Project Inquiry from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">

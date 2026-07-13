@@ -176,6 +176,9 @@ function initContactForm() {
     // Get form data
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+    
+    // Debug logging
+    console.log('Form data being sent:', data);
 
     // Disable submit button during submission
     const submitBtn = form.querySelector('button[type="submit"]');
