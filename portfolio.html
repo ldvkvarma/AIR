@@ -1,0 +1,171 @@
+<!--
+  AIR Studio Portfolio Page
+  Built by hand - no AI used
+  Last updated: July 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — AIR</title>
+<meta name="description" content="Selected web and app projects from AIR studio.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%230A0D12%22/><path d=%22M6 22 L16 8 L26 22 M11 22 L16 14 L21 22%22 stroke=%22%233DDBFF%22 stroke-width=%222%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-field" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#10151D"/>
+        <path d="M6 22 L16 8 L26 22 M11 22 L16 14 L21 22" stroke="#3DDBFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      AIR <span class="callsign">STUDIO</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 4H17M1 9H17M1 14H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer">
+  <div class="mobile-drawer-top">
+    <span class="logo">AIR <span class="callsign">STUDIO</span></span>
+    <button class="drawer-close nav-toggle" aria-label="Close menu">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-primary btn-block">Start a project</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> PORTFOLIO</div>
+    <h1>Selected work across web and app.</h1>
+    <p>A sample logbook — swap these in for real case studies as projects ship.</p>
+  </div>
+</section>
+
+<section class="section reveal" style="border-top:none; padding-top:0;">
+  <div class="wrap">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All work</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="app">App</button>
+    </div>
+
+<!-- Portfolio grid - need to add more projects later -->
+    <div class="card-grid">
+
+      <div class="card" data-category="web">
+        <div class="card-thumb thumb-web" data-glyph="Web / 01"></div>
+        <div class="card-body">
+          <div class="card-cat">Web platform</div>
+          <h3>College Portal</h3>
+          <p>A fullstack college management system with student dashboard, course management, and real-time updates.</p>
+          <div class="card-tags"><span class="tag">Supabase</span><span class="tag">React</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-category="app">
+        <div class="card-thumb thumb-app" data-glyph="App / 01"></div>
+        <div class="card-body">
+          <div class="card-cat">Mobile app</div>
+          <h3>College Portal</h3>
+          <p>Cross-platform mobile app for students to access courses, grades, and campus notifications on the go.</p>
+          <div class="card-tags"><span class="tag">Flutter</span><span class="tag">Supabase</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-category="app">
+        <div class="card-thumb thumb-app" data-glyph="App / 02"></div>
+        <div class="card-body">
+          <div class="card-cat">Mobile app</div>
+          <h3>Salon App</h3>
+          <p>Beauty salon booking app with appointment scheduling, service catalog, and stylist profiles.</p>
+          <div class="card-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA section - might add social proof here -->
+<section class="section reveal">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Want to see something like this built for you?</h2>
+      <p>Tell us the project — we'll map it against the closest thing we've shipped.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Start a project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo">
+          <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#10151D"/>
+            <path d="M6 22 L16 8 L26 22 M11 22 L16 14 L21 22" stroke="#3DDBFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          AIR
+        </a>
+        <p style="color:var(--ink-dim); font-size:14px; margin-top:14px; max-width:32ch;">A build studio for web and app projects.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:airsoftwaresolution@gmail.com">airsoftwaresolution@gmail.com</a>
+          <a href="contact.html">Start a project</a>
+        </div>
+        <div class="footer-col">
+          <h5>Elsewhere</h5>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AIR Studio. All rights reserved.</span>
+      <span>Built by the AIR crew.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

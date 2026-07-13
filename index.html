@@ -1,0 +1,246 @@
+<!--
+  AIR Studio Website
+  Built by hand - no AI used
+  Last updated: July 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIR — Web &amp; App Studio</title>
+<meta name="description" content="AIR is a build studio for web platforms and mobile apps — one crew, two disciplines, shipped fast.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%230A0D12%22/><path d=%22M6 22 L16 8 L26 22 M11 22 L16 14 L21 22%22 stroke=%22%233DDBFF%22 stroke-width=%222%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-field" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#10151D"/>
+        <path d="M6 22 L16 8 L26 22 M11 22 L16 14 L21 22" stroke="#3DDBFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      AIR <span class="callsign">STUDIO</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 4H17M1 9H17M1 14H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer">
+  <div class="mobile-drawer-top">
+    <span class="logo">AIR <span class="callsign">STUDIO</span></span>
+    <button class="drawer-close nav-toggle" aria-label="Close menu">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-primary btn-block">Start a project</a>
+</div>
+
+<!-- ===================== HERO SECTION ===================== -->
+<section class="hero">
+  <div class="hero-streaks" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow"><span class="dot"></span> AIR / WEB · APP STUDIO</div>
+    <h1>We build what <span class="accent">moves.</span></h1>
+    <p class="hero-sub">AIR is a build studio for web platforms and mobile apps. One crew, two disciplines — briefed, built, and shipped under a single roof.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
+      <a href="portfolio.html" class="btn btn-ghost">See the work</a>
+    </div>
+
+    <div class="hud">
+      <div class="hud-item">
+        <div class="hud-label">Disciplines</div>
+        <div class="hud-value" data-count-to="2">0</div>
+      </div>
+      <div class="hud-item">
+        <div class="hud-label">Avg. sprint cycle</div>
+        <div class="hud-value" data-count-to="2" data-suffix=" wks">0</div>
+      </div>
+      <div class="hud-item">
+        <div class="hud-label">Crew, in-house</div>
+        <div class="hud-value" data-count-to="100" data-suffix="%">0</div>
+      </div>
+      <div class="hud-item">
+        <div class="hud-label">Status</div>
+        <div class="hud-value status">CLEARED FOR TAKEOFF</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICE PODS ===================== -->
+<section class="section reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">What we build</div>
+        <h2 class="section-title">Two disciplines, one build process.</h2>
+      </div>
+      <p class="section-desc">Whichever surface your product lives on, it moves through the same disciplined pipeline — from brief to launch.</p>
+    </div>
+
+<!-- Service cards - need to add hover animations later -->
+    <div class="pods">
+      <div class="pod">
+        <div class="pod-tag">AIR / 01</div>
+        <svg class="pod-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="22" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 14H36" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="13" cy="11" r="1" fill="currentColor"/><path d="M14 34H26" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Web</h3>
+        <p>Marketing sites, dashboards, and full-stack platforms built for speed, SEO, and the edge cases that break at scale.</p>
+        <a href="services.html#web" class="pod-link">View web services <svg viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="pod">
+        <div class="pod-tag">AIR / 02</div>
+        <svg class="pod-icon" viewBox="0 0 40 40" fill="none"><rect x="11" y="4" width="18" height="32" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M11 10H29M11 30H29" stroke="currentColor" stroke-width="1.6"/><circle cx="20" cy="33" r="1.2" fill="currentColor"/></svg>
+        <h3>App</h3>
+        <p>Native and cross-platform mobile apps — from first prototype to app-store launch and everything after.</p>
+        <a href="services.html#app" class="pod-link">View app services <svg viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FLIGHT PLAN / PROCESS ===================== -->
+<section class="section reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">How it runs</div>
+        <h2 class="section-title">The flight plan.</h2>
+      </div>
+      <p class="section-desc">Four stages, every project, regardless of surface. No detours.</p>
+    </div>
+
+<!-- Process steps - maybe add icons later -->
+    <div class="plan">
+      <div class="plan-step">
+        <div class="plan-num">STAGE 01</div>
+        <h4>Brief</h4>
+        <p>We scope the problem, the audience, and the constraints — and turn it into a build plan with real milestones.</p>
+      </div>
+      <div class="plan-step">
+        <div class="plan-num">STAGE 02</div>
+        <h4>Build</h4>
+        <p>Engineering and design move in tandem, in short cycles, with something reviewable at the end of every one.</p>
+      </div>
+      <div class="plan-step">
+        <div class="plan-num">STAGE 03</div>
+        <h4>Test</h4>
+        <p>Cross-device QA, performance passes, and user testing — before anything reaches a user.</p>
+      </div>
+      <div class="plan-step">
+        <div class="plan-num">STAGE 04</div>
+        <h4>Launch</h4>
+        <p>Ship, monitor, and hand off with documentation — or stay on as an embedded team for what's next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="section reveal">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Core disciplines</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">In-house crew</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">1</div>
+        <div class="stat-label">Point of contact per build</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">24h</div>
+        <div class="stat-label">Typical reply time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section reveal">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Got something worth building?</h2>
+      <p>Tell us what you're making — we'll tell you how AIR would build it.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Start a project</a>
+        <a href="portfolio.html" class="btn btn-ghost">See the work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo">
+          <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#10151D"/>
+            <path d="M6 22 L16 8 L26 22 M11 22 L16 14 L21 22" stroke="#3DDBFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          AIR
+        </a>
+        <p style="color:var(--ink-dim); font-size:14px; margin-top:14px; max-width:32ch;">A build studio for web and app projects.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:airsoftwaresolution@gmail.com">airsoftwaresolution@gmail.com</a>
+          <a href="contact.html">Start a project</a>
+        </div>
+        <div class="footer-col">
+          <h5>Elsewhere</h5>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AIR Studio. All rights reserved.</span>
+      <span>Built by the AIR crew.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
