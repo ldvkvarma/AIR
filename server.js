@@ -18,14 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 // Email transporter configuration
 // Using Gmail as example - configure your email service
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
-  },
-  connectionTimeout: 5000 // 5 seconds
+  }
 });
 
 // Test email connection on startup
