@@ -251,6 +251,9 @@ function initCustomCursor() {
   const ring = document.querySelector('.cursor-ring');
   if (!dot || !ring || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+  // Hide default cursor
+  document.body.classList.add('custom-cursor-active');
+
   let mouseX = 0;
   let mouseY = 0;
   let ringX = 0;
