@@ -67,6 +67,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Hide default cursor when custom cursor is active */
+body.custom-cursor-active {
+  cursor: none;
+}
+
 img, svg { display: block; max-width: 100%; }
 
 a { color: inherit; text-decoration: none; }
